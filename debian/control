@@ -1,15 +1,28 @@
-Source: flask-socketio
-Section: universe/python
-Maintainer: DIGITS Development Team <digitsdev@nvidia.com>
+Source: python-bleach
+Maintainer: Luke Yeager <luke.yeager@gmail.com>
+Section: python
 Priority: optional
-Build-depends: python-dev, debhelper (>= 9)
+Build-depends: debhelper (>= 9), dh-python, python-all, python-setuptools, python-nose
 Standards-Version: 3.9.5
+Homepage: https://bleach.readthedocs.io/en/latest/
+Vcs-Browser: https://github.com/mozilla/bleach
 
-Package: python-flaskext.socketio
-Architecture: amd64
-Depends: ${misc:Depends}, python, python-socketio
-Description: Flask SocketIO extension
- Flask-SocketIO gives Flask applications access to low latency bi-directional
- communications between the clients and the server. The client-side
- application can use the SocketIO Javascript library or any compatible client
- to establish a permanent connection to the server.
+Package: python-bleach
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: whitelist-based HTML-sanitizing library (Python 2)
+ Bleach is an HTML sanitizing library that escapes or strips markup and
+ attributes based on a white list. Bleach can also linkify text safely,
+ applying filters that Django's urlize filter cannot, and optionally setting
+ rel attributes, even on links already in the text.
+ .
+ Bleach is intended for sanitizing text from untrusted sources. If you find
+ yourself jumping through hoops to allow your site administrators to do lots of
+ things, you're probably outside the use cases. Either trust those users, or
+ don't.
+ .
+ Because it relies on html5lib, Bleach is as good as modern browsers at dealing
+ with weird, quirky HTML fragments. And any of Bleach's methods will fix
+ unbalanced or mis-nested tags.
+ .
+ This is the Python 2 version of the package.
