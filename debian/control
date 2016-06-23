@@ -1,0 +1,15 @@
+Source: flask-socketio
+Section: universe/python
+Maintainer: DIGITS Development Team <digitsdev@nvidia.com>
+Priority: optional
+Build-depends: python-dev, debhelper (>= 9)
+Standards-Version: 3.9.5
+
+Package: python-flaskext.socketio
+Architecture: amd64
+Depends: ${misc:Depends}, python, python-socketio
+Description: Flask SocketIO extension
+ Flask-SocketIO gives Flask applications access to low latency bi-directional
+ communications between the clients and the server. The client-side
+ application can use the SocketIO Javascript library or any compatible client
+ to establish a permanent connection to the server.
