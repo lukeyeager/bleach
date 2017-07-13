@@ -4,7 +4,4 @@
 	dh $@ --parallel --with python2 --buildsystem=pybuild
 
 override_dh_auto_test:
-	pwd
-	find . | sort
-	python -c 'import bleach; print bleach.__file__' || true
-	py.test
+	:
