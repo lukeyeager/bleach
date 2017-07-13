@@ -4,4 +4,4 @@
 	dh $@ --parallel --with python2 --buildsystem=pybuild
 
 override_dh_auto_test:
-	nosetests
+	py.test

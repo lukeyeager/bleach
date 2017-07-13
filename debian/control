@@ -2,7 +2,7 @@ Source: python-bleach
 Maintainer: Luke Yeager <luke.yeager@gmail.com>
 Section: python
 Priority: optional
-Build-depends: debhelper (>= 9), dh-python, python-all, python-setuptools, python-nose
+Build-depends: debhelper (>= 9), dh-python, python-all, python-setuptools, python-pytest
 Standards-Version: 3.9.5
 Homepage: https://bleach.readthedocs.io/en/latest/
 Vcs-Browser: https://github.com/mozilla/bleach
